@@ -18,13 +18,13 @@ public class Menu {
     }
 
     public void menuPrincipal() {
-        int op;
+        int stop;
         do {
             System.out.println("1. Jugar a los dados");
             System.out.println("2. Exit");
-            op = sc.nextInt();
+            stop = sc.nextInt();
             sc.nextLine();
-            switch (op){
+            switch (stop){
                 case 1:
                     juego.play();
                     break;
@@ -33,7 +33,7 @@ public class Menu {
                 default:
                     System.out.println("Escoge entre el 1 y el 2");
             }
-        } while(op !=2);
+        } while(stop !=2);
     }
 }
 
