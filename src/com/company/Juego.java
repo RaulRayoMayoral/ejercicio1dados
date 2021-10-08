@@ -56,7 +56,6 @@ public class Juego {
         }else{
             System.out.println("No gano nadie");
         }
-
         System.out.println();
         System.out.print("Quieres seguir jugando? ");
         op = sc.nextLine();
