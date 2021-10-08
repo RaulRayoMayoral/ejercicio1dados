@@ -20,7 +20,7 @@ public class Menu {
     public void menuPrincipal() {
         int op;
         do {
-            System.out.println("1. Jugar Dado");
+            System.out.println("1. Jugar a los dados");
             System.out.println("2. Exit");
             op = sc.nextInt();
             sc.nextLine();

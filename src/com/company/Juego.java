@@ -25,8 +25,10 @@ public class Juego {
     }
 
     public void play() {
-        System.out.println("Dados  que hay: " + configuracion.getDado());
-        System.out.println("Hay " + configuracion.getJugador() + " jugadores");
+        System.out.println("Dados que hay: " + configuracion.getDado());
+        System.out.println();
+        System.out.println("Jugadores que hay: " + configuracion.getJugador() );
+        System.out.println();
         for (int i = 0; i < configuracion.getJugador(); i++) {
             player[i].dado.jugar();
             System.out.println(player[i].getName() + " ha sacado " + player[i].dado.dado + " " +  player[i].dado.dado2 + " " +  player[i].dado.dado3);
@@ -52,7 +54,7 @@ public class Juego {
             player[0].setPerdidas(1);
             player[1].setWin(false);
         }else{
-            System.out.println("Una pena nadie gano");
+            System.out.println("No gano nadie");
         }
 
         System.out.println();
