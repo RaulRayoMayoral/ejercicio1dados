@@ -6,7 +6,7 @@ public class Configuracion {
 
     public Configuracion(){
         this.dado = 3;
-        this.jugador = 2;
+        this.jugador =2;
     }
 
     public int getDado() {
