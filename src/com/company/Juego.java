@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Juego {
     private final Scanner sc = new Scanner(System.in);
     private Configuracion configuracion;
-    private final Menu menuPrincipal;
+    private final Menu menu;
     final Dado dado;
     String op;
     private final Jugador[] player = new Jugador[2];
 
     public Juego() {
-        menuPrincipal = new Menu(this, configuracion);
+        menu = new Menu(this, configuracion);
         configuracion = new Configuracion();
         dado = new Dado();
         this.player[0] = new Jugador();
@@ -21,7 +21,7 @@ public class Juego {
     }
 
     public void start() {
-        menuPrincipal.show();
+        menu.show();
     }
 
     public void play() {
