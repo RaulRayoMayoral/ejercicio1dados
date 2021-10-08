@@ -49,7 +49,7 @@ public class Juego {
             player[1].setPerdidas(1);
             player[0].setWin(false);
         }else if ( player[1].getWin()){
-            System.out.println("Win para el" +player[1].getName());
+            System.out.println("Win para el" + player[1].getName());
             player[1].setGanadas(1);
             player[0].setPerdidas(1);
             player[1].setWin(false);
