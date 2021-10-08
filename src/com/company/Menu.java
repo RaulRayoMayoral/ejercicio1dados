@@ -8,7 +8,7 @@ public class Menu {
     Configuracion configuracion;
     private final Scanner sc = new Scanner(System.in);
 
-    public Menu(Juego juego, Configuracion configGame){
+    public Menu(Juego juego, Configuracion configuracion){
         this.juego = juego;
         this.configuracion = configuracion;
     }
