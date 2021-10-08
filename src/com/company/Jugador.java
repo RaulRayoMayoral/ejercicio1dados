@@ -51,9 +51,6 @@ public class Jugador {
 
     @Override
     public String toString() {
-        return "Player{" +
-                "name='" + name + '\'' +
-                ", win=" + win +
-                '}';
+        return "Player{" + "name='" + name + '\'' + ", win=" + win + '}';
     }
 }
