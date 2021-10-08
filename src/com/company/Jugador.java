@@ -11,20 +11,14 @@ public class Jugador {
         win = false;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public boolean getWin() {return win;}
 
     public void setWin(boolean win) {
         this.win = win;
     }
-
+    public String getName() {
+        return name;
+    }
     public void setGanadas(int ganadas) {
         this.ganadas += ganadas;
     }
@@ -32,9 +26,15 @@ public class Jugador {
     public void setPartidas(int partidas) {
         this.partidas += partidas;
     }
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public void setPerdidas(int perdidas) {
         this.perdidas += perdidas;
+    }
+    public int getPerdidas() {
+        return perdidas;
     }
 
     public int getGanadas() {
@@ -43,10 +43,6 @@ public class Jugador {
 
     public int getPartidas() {
         return partidas;
-    }
-
-    public int getPerdidas() {
-        return perdidas;
     }
 
     @Override

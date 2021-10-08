@@ -27,15 +27,21 @@ public class Menu {
             stop = sc.nextInt();
             sc.nextLine();
             switch (stop) {
-                case 1 -> juego.play();
-                case 2 -> {
+                case 1:
+                    juego.play();
+                    break;
+
+                case 2:
                     System.out.println("Como te llamas");
                     nombre = sc.nextLine();
                     System.out.println("Encantado de conocerte " + nombre);
                     System.out.println("Que tenga un buen dia");
                     System.out.println();
-                }
-                default -> System.out.println("Escoge entre el 1 ,el 2 y el 2");
+                    break;
+                case 3:
+                    break;
+                default:
+                    System.out.println("Escoge entre el 1 ,el 2 y el 3");
             }
         } while(stop !=3);
     }

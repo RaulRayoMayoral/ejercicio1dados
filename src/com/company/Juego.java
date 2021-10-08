@@ -64,7 +64,7 @@ public class Juego {
             play();
         }else{
             for (int i = 0; i < configuracion.getJugador(); i++) {
-                System.out.println( player[i].getName() + " ha ganado " +  player[i].getGanadas() + " partidas"+", ha perdido " +  player[i].getPerdidas() + " partidas "+ "y ha jugado " +  player[i].getPartidas() + " partidas.");
+                System.out.println( player[i].getName() + " ha ganado " +  player[i].getGanadas() + " partidas"+", ha perdido " +  player[i].getPerdidas() + " partidas "+ "y ha jugado " +  player[i].getPartidas());
             }
             System.out.println();
         }
